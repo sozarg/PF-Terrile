@@ -1,3 +1,18 @@
 body{
-    background-color: red;
+    background-color: gray;
+}
+
+nav{
+    background-color: #E8BFED;
+    span{
+        font-size: 0.8em;
+    }
+
+    ul{
+        li{
+            a{
+                color: white !important;
+            }
+        }
+    }
 }

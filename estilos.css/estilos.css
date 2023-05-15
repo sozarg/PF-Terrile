@@ -1,3 +1,13 @@
 body {
-  background-color: red;
+  background-color: gray;
+}
+
+nav {
+  background-color: #E8BFED;
+}
+nav span {
+  font-size: 0.8em;
+}
+nav ul li a {
+  color: white !important;
 }/*# sourceMappingURL=estilos.css.map */
