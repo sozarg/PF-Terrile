@@ -64,15 +64,15 @@ nav ul li a:hover {
 }
 
 .item1 {
-  background-image: url(/img/carrusel1.jpg);
+  background-image: url(../img/carrusel1.jpg);
 }
 
 .item2 {
-  background-image: url(/img/carrusel2.jpg);
+  background-image: url(../img/carrusel2.jpg);
 }
 
 .item3 {
-  background-image: url(/img/carrusel3.jpg);
+  background-image: url(../img/carrusel3.jpg);
 }
 
 h1 {
