@@ -31,11 +31,11 @@
 }
 
 body {
-  background-color: #f7ccff;
+  background-color: #eab2f4;
 }
 
 nav {
-  background-color: #cb6fdb;
+  background-color: #b345ce;
   font-family: fuenteNav;
 }
 nav span {
@@ -53,7 +53,7 @@ nav ul li .inhabilitado {
   color: red !important;
 }
 nav ul li a:hover {
-  background-color: #e492f3;
+  background-color: #d97fe9;
 }
 
 .item {
@@ -80,18 +80,27 @@ h1 {
   font-family: fuenteLista;
   text-align: center;
   justify-content: center;
-  color: #cb6fdb;
+  color: #b345ce;
   font-style: italic;
   text-shadow: -1px -2px 2px rgb(255, 255, 255), 0 0 5px #eda0ed;
   font-size: 3em;
 }
 
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
 .list-group .list-group-item {
-  background-color: #e492f3;
+  background-color: #d97fe9;
   border-color: #FCEDFF;
 }
 .list-group .titulo {
-  background-color: #cb6fdb;
+  background-color: #b345ce;
   color: rgb(255, 215, 254);
   text-align: center;
   justify-content: center;
@@ -115,31 +124,33 @@ h1 {
 }
 
 .card-body {
-  background-color: #e492f3;
-}
-.card-body a {
-  background-color: #cb6fdb;
-  border: 2px solid white;
-  font-family: fuenteDesc;
-}
-.card-body a:hover {
-  background-color: #e0a5ee;
-  border: 2px solid #cb6fdb;
+  background-color: #d97fe9;
 }
 .card-body .card-title {
   font-family: fuenteCard;
   color: white;
   font-size: 2em;
-  text-shadow: 0 0 5px #000, 0 0 5px #000;
+  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .card-body .card-text {
   font-family: fuenteCard;
   font-size: 1.5em;
-  text-shadow: 0 0 5px #838282, 0 0 5px #5d5c5c;
+  text-shadow: 1px 1px 2px rgb(191, 110, 152);
+}
+.card-body .btn {
+  background-color: #b345ce;
+  border: 2px solid white;
+  font-family: fuenteDesc;
+  transition: transform 0.3s;
+}
+.card-body .btn:hover {
+  background-color: #eab2f4;
+  border: 2px solid #b345ce;
+  transform: translateY(-5px);
 }
 
 .calidad-info {
-  background-color: rgba(228, 146, 243, 0.3);
+  background-color: #d97fe9;
   border-radius: 10px;
   padding: 20px;
 }
@@ -152,7 +163,7 @@ h1 {
 .calidad-info p {
   font-family: fuenteCard;
   font-size: 1.5em;
-  text-shadow: 1px 1px 2px rgb(154, 154, 154);
+  text-shadow: 1px 1px 2px rgb(191, 110, 152);
 }
 
 @media screen and (max-width: 660px) {
@@ -184,7 +195,7 @@ h1 {
 }
 
 header {
-  background-color: #e492f3;
+  background-color: #d97fe9;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -204,7 +215,7 @@ header .titleContainer {
   width: 100%;
   height: 7rem;
   min-height: 7rem;
-  background-color: #cb6fdb;
+  background-color: #b345ce;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +250,7 @@ header .titleContainer {
 }
 
 main {
-  background-color: #e492f3;
+  background-color: #d97fe9;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -396,5 +407,16 @@ main .wrapper {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }/*# sourceMappingURL=estilos.css.map */

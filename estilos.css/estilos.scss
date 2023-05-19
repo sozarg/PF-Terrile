@@ -28,8 +28,8 @@
     src: url(../fonts/Chickens\ Lovers.ttf);
 }
 
-$color-primario: #cb6fdb;
-$color-secundario: #e492f3;
+$color-primario: #b345ce;
+$color-secundario: #d97fe9;
 $fuente-principal: fuenteCard;
 
 *{
@@ -40,7 +40,7 @@ $fuente-principal: fuenteCard;
     box-sizing: border-box;
 }
 body{
-    background-color: #f7ccff;
+    background-color: #eab2f4;
 }
 
 nav{
@@ -99,6 +99,13 @@ h1{
     font-size: 3em;
 }
 
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounce {
+    animation-name: bounce;
+}
 .list-group{
     .list-group-item{
         background-color:$color-secundario;
@@ -132,30 +139,32 @@ h1{
 
 .card-body{
     background-color: $color-secundario;
-    a{
-        background-color: $color-primario;
-        border: 2px solid white;
-        font-family: fuenteDesc;
-    }
-    a:hover{
-        background-color: #e0a5ee;
-        border: 2px solid $color-primario;
-    }
     .card-title{
         font-family: fuenteCard;
         color: white;
         font-size: 2em;
-        text-shadow: 0 0 5px #000, 0 0 5px #000;
+        text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
     }
     .card-text{
         font-family: fuenteCard;
         font-size: 1.5em;
-        text-shadow: 0 0 5px #838282, 0 0 5px #5d5c5c;
+        text-shadow: 1px 1px 2px rgb(191, 110, 152);
+    }
+    .btn{
+        background-color: $color-primario;
+        border: 2px solid white;
+        font-family: fuenteDesc;
+        transition: transform 0.3s;
+    }
+    .btn:hover{
+        background-color: #eab2f4;
+        border: 2px solid $color-primario;
+        transform: translateY(-5px);
     }
 }
 
 .calidad-info{
-    background-color: rgba(228, 146, 243, 0.3);
+    background-color: $color-secundario;
     border-radius: 10px;
     padding: 20px;
     h2{
@@ -167,7 +176,7 @@ h1{
     p{
         font-family: fuenteCard;
         font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgb(154, 154, 154);
+        text-shadow: 1px 1px 2px rgb(191, 110, 152);
     }
 }
 
@@ -481,5 +490,23 @@ main .wrapper {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
     }
 }
