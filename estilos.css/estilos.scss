@@ -28,6 +28,11 @@
     src: url(../fonts/Chickens\ Lovers.ttf);
 }
 
+@font-face {
+    font-family: fuenteText;
+    src: url(../fonts/editundo.ttf);
+}
+
 $color-primario: #b345ce;
 $color-secundario: #d97fe9;
 $fuente-principal: fuenteCard;
@@ -99,13 +104,7 @@ h1{
     font-size: 3em;
 }
 
-.animate {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-.bounce {
-    animation-name: bounce;
-}
+
 .list-group{
     .list-group-item{
         background-color:$color-secundario;
@@ -143,12 +142,13 @@ h1{
         font-family: fuenteCard;
         color: white;
         font-size: 2em;
-        text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+        text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
     }
     .card-text{
+        color: #000000;
         font-family: fuenteCard;
         font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgb(191, 110, 152);
+        text-shadow: 1px 1px 2px rgb(193, 66, 200);
     }
     .btn{
         background-color: $color-primario;
@@ -176,17 +176,17 @@ h1{
     p{
         font-family: fuenteCard;
         font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgb(191, 110, 152);
+        text-shadow: 1px 1px 2px rgb(193, 66, 200);
     }
 }
 
-.row{
+.fila{
     display: flex;
     flex-wrap: wrap;
 }
 
 aside{
-    flex: 30px;
+    flex: 30%;
     background-color: $color-secundario;
     padding: 20px;
 
@@ -221,46 +221,73 @@ section{
     flex: 70%;
     background-color: #eab2f4;
     padding: 20px;
-
-    .principio{
-        text-align: center;
-        justify-content: center;
-        h2{
-            margin-top: 50px;
-            font-family: fuenteLista;
-            text-align: center;
-            justify-content: center;
-            color: $color-primario;
-            font-style: italic;
-            text-shadow: -1px -2px 2px rgb(255, 255, 255), 0 0 5px #eda0ed;
-            font-size: 2em;
-        }
-        p{
-            font-family: fuenteDesc;
-            span{
-                color: white;
-            }
-        }
-    }
-
-    .componentes-box{
-        background-color: $color-secundario;
-        width: 100%px;
-        height: 500px;
-        text-align: center;
-        justify-content: center;
-        border-radius: 30px;
-        border: 1px solid $color-primario;
-        img{
-            float: left;
-            height: 100%;
-            border-radius: 30px;
-            border: 6px solid $color-primario;
-        }
-
-    }
+    
+    
 }
 
+
+.seccion{
+    background-color: $color-secundario;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    width: 100%;
+    margin: 10rem auto 0 auto;
+    border-radius: 30px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .seccion-texto{
+    padding: 5px 5px;
+    text-align: justify;
+    img{
+        border-radius: 5px;
+        float: left;
+        margin-right: 15px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid $color-primario;
+        }
+
+    h3{
+        font-family: fuenteText;
+        color: white;
+        font-size: 2em;
+        text-shadow: 1px 4px 4px rgb(0, 0, 0);
+        text-align: left;
+    }
+    p{
+
+        font-family: fuenteCard;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
+        text-shadow: 1px 1px 2px rgb(193, 66, 200);
+        
+    }
+  }
+
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounce {
+    animation-name: bounce;
+}
+
+.animate.animate--infinite {
+    animation-iteration-count: infinite;
+}
+
+.slideInDown{
+    animation-name: slideInDown;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+
+}
 @media screen and (max-width: 660px) {
     nav{
         span{
@@ -313,5 +340,15 @@ section{
 
     60% {
         transform: translateY(-15px);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(4000px);
     }
 }

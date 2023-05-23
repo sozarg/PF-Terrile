@@ -22,6 +22,10 @@
   font-family: fuenteNav2;
   src: url(../fonts/Chickens\ Lovers.ttf);
 }
+@font-face {
+  font-family: fuenteText;
+  src: url(../fonts/editundo.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -86,15 +90,6 @@ h1 {
   font-size: 3em;
 }
 
-.animate {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.bounce {
-  animation-name: bounce;
-}
-
 .list-group .list-group-item {
   background-color: #d97fe9;
   border-color: #FCEDFF;
@@ -130,12 +125,13 @@ h1 {
   font-family: fuenteCard;
   color: white;
   font-size: 2em;
-  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+  text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
 }
 .card-body .card-text {
+  color: #000000;
   font-family: fuenteCard;
   font-size: 1.5em;
-  text-shadow: 1px 1px 2px rgb(191, 110, 152);
+  text-shadow: 1px 1px 2px rgb(193, 66, 200);
 }
 .card-body .btn {
   background-color: #b345ce;
@@ -163,16 +159,16 @@ h1 {
 .calidad-info p {
   font-family: fuenteCard;
   font-size: 1.5em;
-  text-shadow: 1px 1px 2px rgb(191, 110, 152);
+  text-shadow: 1px 1px 2px rgb(193, 66, 200);
 }
 
-.row {
+.fila {
   display: flex;
   flex-wrap: wrap;
 }
 
 aside {
-  flex: 30px;
+  flex: 30%;
   background-color: #d97fe9;
   padding: 20px;
 }
@@ -206,40 +202,63 @@ section {
   background-color: #eab2f4;
   padding: 20px;
 }
-section .principio {
-  text-align: center;
-  justify-content: center;
-}
-section .principio h2 {
-  margin-top: 50px;
-  font-family: fuenteLista;
-  text-align: center;
-  justify-content: center;
-  color: #b345ce;
-  font-style: italic;
-  text-shadow: -1px -2px 2px rgb(255, 255, 255), 0 0 5px #eda0ed;
-  font-size: 2em;
-}
-section .principio p {
-  font-family: fuenteDesc;
-}
-section .principio p span {
-  color: white;
-}
-section .componentes-box {
+
+.seccion {
   background-color: #d97fe9;
-  width: 100% px;
-  height: 500px;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  width: 100%;
+  margin: 10rem auto 0 auto;
   border-radius: 30px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seccion-texto {
+  padding: 5px 5px;
+  text-align: justify;
+}
+.seccion-texto img {
+  border-radius: 5px;
+  float: left;
+  margin-right: 15px;
+  height: 250px;
+  border-radius: 10px;
   border: 1px solid #b345ce;
 }
-section .componentes-box img {
-  float: left;
-  height: 100%;
-  border-radius: 30px;
-  border: 6px solid #b345ce;
+.seccion-texto h3 {
+  font-family: fuenteText;
+  color: white;
+  font-size: 2em;
+  text-shadow: 1px 4px 4px rgb(0, 0, 0);
+  text-align: left;
+}
+.seccion-texto p {
+  font-family: fuenteCard;
+  font-size: 1.5em;
+  text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
+  text-shadow: 1px 1px 2px rgb(193, 66, 200);
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
 }
 
 @media screen and (max-width: 660px) {
@@ -270,5 +289,13 @@ section .componentes-box img {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@keyframes slideInDown {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(4000px);
   }
 }/*# sourceMappingURL=estilos.css.map */
