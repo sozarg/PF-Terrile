@@ -47,13 +47,13 @@ nav {
   font-family: fuenteNav;
 }
 nav span {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: fuenteNav;
   text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
 }
 nav ul li a {
   color: white !important;
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
 }
 nav ul li .inhabilitado {
@@ -305,8 +305,63 @@ section {
   font-size: 1.4em;
 }
 
+.form-cont {
+  width: 50%;
+}
+
+.form {
+  border: solid 2px #b345ce;
+  background-color: #d97fe9;
+}
+
+.title-form {
+  margin-top: 20px;
+  font-family: fuenteTitle;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(1, 0, 1);
+}
+
+.form-control {
+  font-family: fuenteCard;
+  background-color: #eab2f4;
+}
+
+.form-control:focus {
+  font-family: fuenteCard;
+  background-color: #eab2f4;
+  border-color: #b345ce;
+}
+
+.boton-form {
+  background-color: #b345ce;
+  width: 20%;
+  border: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid 2px #eab2f4;
+  font-family: fuenteTitle;
+}
+
+.boton-form:hover {
+  background-color: #eab2f4;
+  border: solid 2px #eab2f4;
+}
+
+.boton-form:active {
+  background-color: #e857f5 !important;
+  border: solid 2px #eab2f4 !important;
+}
+
+.foter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 .animate {
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-fill-mode: both;
 }
 
@@ -344,8 +399,17 @@ section {
     border-radius: 10px;
     border: 1px solid #b345ce;
   }
+  .blockcode {
+    font-size: 0.7em;
+  }
 }
 @media screen and (max-width: 660px) {
+  .boton-form {
+    width: 50%;
+  }
+  .form-cont {
+    width: 80%;
+  }
   nav span {
     font-size: 1.2em;
   }
