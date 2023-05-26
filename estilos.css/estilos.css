@@ -3,6 +3,10 @@
   src: url(../fonts/OxfordStreet.ttf);
 }
 @font-face {
+  font-family: fuentePixel;
+  src: url(../fonts/Minecraftia-Regular.ttf);
+}
+@font-face {
   font-family: fuenteLista;
   src: url(../fonts/04B_30__.TTF);
 }
@@ -242,6 +246,65 @@ section {
   text-shadow: 1px 1px 2px rgb(193, 66, 200);
 }
 
+.cuerpores {
+  border: 2px solid #b345ce;
+  border-radius: 10px;
+  background-color: #d97fe9;
+  width: 100%;
+  margin: auto;
+}
+.cuerpores .review {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  font-family: fuenteText;
+  color: white;
+  background-color: #b345ce;
+  text-shadow: 1px 1px 2px rgb(1, 0, 1);
+  font-size: 1.7em;
+}
+.cuerpores .bien {
+  text-align: center;
+  font-family: fuenteNav;
+  color: white;
+  background-color: #b345ce;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+.cuerpores .bien span {
+  color: greenyellow;
+}
+.cuerpores .mal {
+  text-align: center;
+  font-family: fuenteNav;
+  color: white;
+  background-color: #b345ce;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+.cuerpores .mal span {
+  color: rgb(255, 50, 47);
+}
+.cuerpores img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cuerpores img:hover {
+  filter: brightness(150%);
+  transform: scale(0.95);
+  transition: all 0.9s;
+}
+.cuerpores p {
+  text-align: center;
+  font-family: fuenteCard;
+  text-shadow: 1px 1px 2px rgb(246, 129, 213);
+  font-size: 1.4em;
+}
+
 .animate {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -258,7 +321,7 @@ section {
 .slideInDown {
   animation-name: slideInDown;
   animation-timing-function: ease-in;
-  animation-duration: 15s;
+  animation-duration: 5s;
 }
 
 @media screen and (max-width: 1466px) {
@@ -333,6 +396,6 @@ section {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(4000px);
+    transform: translateY(500px);
   }
 }/*# sourceMappingURL=estilos.css.map */
