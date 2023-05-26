@@ -400,18 +400,22 @@ section{
 
   @media screen and (max-width: 540px) {
     nav{
+        button{
+            font-size: 0.6em !important;
+        }
         span{
-            font-size: 0.62em;
+            font-size: 0.8em;
         }
     
         ul{
             li{
                 a{
-                    font-size: 0.62em !important;
+                    font-size: 1em !important;
                 }
             }
         }
     }
+
 
     h1{
         font-size: 2em;
@@ -436,6 +440,27 @@ section{
         }
     }
   }
+
+
+  @media screen and (max-width: 540px) {
+    nav{
+        button{
+            font-size: 0.5em !important;
+        }
+        span{
+            font-size: 0.7em;
+        }
+    
+        ul{
+            li{
+                a{
+                    font-size: 1em !important;
+                }
+            }
+        }
+    }
+  }
+  
 
 @keyframes bounce {
     0%,
