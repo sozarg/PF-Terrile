@@ -412,7 +412,7 @@ section{
 .slideInDown{
     animation-name: slideInDown;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 8s;
 
 }
 
@@ -561,6 +561,6 @@ section{
     }
 
     to {
-        transform: translateY(500px);
+        transform: translateY(3000px);
     }
 }
