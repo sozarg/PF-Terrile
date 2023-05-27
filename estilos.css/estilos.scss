@@ -1,566 +1,542 @@
 @font-face {
-    font-family: fuenteTitle;
-    src: url(../fonts/OxfordStreet.ttf);
+  font-family: fuenteTitle;
+  src: url(../fonts/OxfordStreet.ttf);
 }
 @font-face {
-    font-family: fuentePixel;
-    src: url(../fonts/Minecraftia-Regular.ttf);
-}
-
-@font-face {
-    font-family: fuenteLista;
-    src: url(../fonts/04B_30__.TTF);
+  font-family: fuentePixel;
+  src: url(../fonts/Minecraftia-Regular.ttf);
 }
 
 @font-face {
-    font-family: fuenteDesc;
-    src: url(../fonts/upheavtt.ttf);
+  font-family: fuenteLista;
+  src: url(../fonts/04B_30__.TTF);
 }
 
 @font-face {
-    font-family: fuenteCard;
-    src: url(../fonts/Pixel-UniCode.ttf);
+  font-family: fuenteDesc;
+  src: url(../fonts/upheavtt.ttf);
 }
 
 @font-face {
-    font-family: fuenteNav;
-    src: url(../fonts/superstar_memesbruh03.ttf);
+  font-family: fuenteCard;
+  src: url(../fonts/Pixel-UniCode.ttf);
 }
 
 @font-face {
-    font-family: fuenteNav2;
-    src: url(../fonts/Chickens\ Lovers.ttf);
+  font-family: fuenteNav;
+  src: url(../fonts/superstar_memesbruh03.ttf);
 }
 
 @font-face {
-    font-family: fuenteText;
-    src: url(../fonts/editundo.ttf);
+  font-family: fuenteNav2;
+  src: url(../fonts/Chickens\ Lovers.ttf);
+}
+
+@font-face {
+  font-family: fuenteText;
+  src: url(../fonts/editundo.ttf);
 }
 
 $color-primario: #b345ce;
 $color-secundario: #d97fe9;
 $fuente-principal: fuenteCard;
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-body{
-    background-color: #eab2f4;
+body {
+  background-color: #eab2f4;
 }
 
-nav{
-    background-color: $color-primario;
+nav {
+  background-color: $color-primario;
+  font-family: fuenteNav;
+  span {
+    font-size: 1.2em;
     font-family: fuenteNav;
-    span{
-        font-size: 1.2em;
-        font-family: fuenteNav;
-        text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
-    }
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
+  }
 
-    ul{
-        li{
-            a{
-                color: white !important;
-                font-size: 1.2em !important;
-                text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
-            }
-            .inhabilitado{
-                text-decoration: line-through !important;
-                color: red !important;
-            }
-            a:hover{
-                background-color: $color-secundario;
-            }
-        }
+  ul {
+    li {
+      a {
+        color: white !important;
+        font-size: 1.2em !important;
+        text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
+      }
+      .inhabilitado {
+        text-decoration: line-through !important;
+        color: red !important;
+      }
+      a:hover {
+        background-color: $color-secundario;
+      }
     }
+  }
 }
 
+.item {
+  height: 450px !important;
+  width: 100% !important;
+  background-position: center;
+  background-size: cover;
+}
 
-.item{
-    height: 450px !important;
-    width: 100% !important;
+.item1 {
+  background-image: url(../img/carrusel1.jpg);
+}
+.item2 {
+  background-image: url(../img/carrusel2.jpg);
+}
+.item3 {
+  background-image: url(../img/carrusel3.jpg);
+}
+
+h1 {
+  margin-top: 70px;
+  font-family: fuenteLista;
+  text-align: center;
+  justify-content: center;
+  color: $color-primario;
+  font-style: italic;
+  text-shadow: -1px -2px 2px rgb(255, 255, 255), 0 0 5px #eda0ed;
+  font-size: 3em;
+}
+
+.list-group {
+  .list-group-item {
+    background-color: $color-secundario;
+    border-color: #fcedff;
+  }
+  .titulo {
+    background-color: $color-primario;
+    color: rgb(255, 215, 254);
+    text-align: center;
+    justify-content: center;
+    font-family: $fuente-principal;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
+
+    font-size: 2em;
+    padding: 30px;
+  }
+  .info {
+    font-family: $fuente-principal;
+    color: rgb(255, 215, 254);
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
+  }
+  .info:hover {
+    color: white;
+    background-color: #e0a5ee;
+  }
+}
+
+.card-body {
+  background-color: $color-secundario;
+  .card-title {
+    font-family: fuenteCard;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
+  }
+  .card-text {
+    color: #000000;
+    font-family: fuenteCard;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgb(193, 66, 200);
+  }
+  .btn {
+    background-color: $color-primario;
+    border: 2px solid white;
+    font-family: fuenteDesc;
+    transition: transform 0.3s;
+  }
+  .btn:hover {
+    background-color: #eab2f4;
+    border: 2px solid $color-primario;
+    transform: translateY(-5px);
+  }
+}
+
+.calidad-info {
+  background-color: $color-secundario;
+  border-radius: 10px;
+  padding: 20px;
+  h2 {
+    font-size: 2em;
+    font-family: fuenteNav;
+    color: white;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
+  }
+  p {
+    font-family: fuenteCard;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgb(193, 66, 200);
+  }
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 30%;
+  background-color: $color-secundario;
+  padding: 20px;
+
+  .entrada {
+    background-image: url(../img/perfil.jpg);
+    width: 400px;
+    height: 400px;
+
     background-position: center;
     background-size: cover;
-}
-
-.item1{
-    background-image: url(../img/carrusel1.jpg);
-}
-.item2{
-    background-image: url(../img/carrusel2.jpg);
-}
-.item3{
-    background-image: url(../img/carrusel3.jpg);
-}
-
-h1{
-    margin-top: 70px;
-    font-family: fuenteLista;
     text-align: center;
     justify-content: center;
-    color: $color-primario;
-    font-style: italic;
-    text-shadow: -1px -2px 2px rgb(255, 255, 255), 0 0 5px #eda0ed;
-    font-size: 3em;
-}
-
-
-.list-group{
-    .list-group-item{
-        background-color:$color-secundario;
-        border-color: #FCEDFF;
-    }
-    .titulo{
-        background-color:$color-primario;
-        color: rgb(255, 215, 254);
-        text-align: center;
-        justify-content: center;
-        font-family: $fuente-principal;
-        text-shadow: 1px 1px 2px black, -1px -1px 2px black, 0 0 5px #000;
-        
-        font-size: 2em;
-        padding: 30px;
-    }
-    .info{
-        font-family: $fuente-principal;
-        color: rgb(255, 215, 254);
-        font-size: 1.5em;
-        text-align: center;
-        justify-content: center;
-        padding: 15px;
-        text-shadow: 0 0 5px #000, 0 0 5px #000;
-    }
-    .info:hover{
-        color: white;
-        background-color:#e0a5ee;
-    }
-}
-
-.card-body{
-    background-color: $color-secundario;
-    .card-title{
-        font-family: fuenteCard;
-        color: white;
-        font-size: 2em;
-        text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
-    }
-    .card-text{
-        color: #000000;
-        font-family: fuenteCard;
-        font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgb(193, 66, 200);
-    }
-    .btn{
-        background-color: $color-primario;
-        border: 2px solid white;
-        font-family: fuenteDesc;
-        transition: transform 0.3s;
-    }
-    .btn:hover{
-        background-color: #eab2f4;
-        border: 2px solid $color-primario;
-        transform: translateY(-5px);
-    }
-}
-
-.calidad-info{
-    background-color: $color-secundario;
-    border-radius: 10px;
-    padding: 20px;
-    h2{
-        font-size: 2em;
-        font-family: fuenteNav;
-        color: white;
-        text-shadow: 0 0 5px #000, 0 0 5px #000;
-    }
-    p{
-        font-family: fuenteCard;
-        font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgb(193, 66, 200);
-    }
-}
-
-.fila{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-aside{
-    flex: 30%;
-    background-color: $color-secundario;
-    padding: 20px;
-
-    .entrada{
-
-        background-image: url(../img/perfil.jpg);
-        width: 400px;
-        height: 400px;
-
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        border: 6px solid $color-primario;
-        border-radius: 30px;
-    }
-
-    .entrada:hover{
-        background-image: url(../img/perfil2.jpg);
-        width: 400px;
-        height: 400px;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        border: 6px solid $color-primario;
-        border-radius: 30px;
-    }
-}
-section{
-    flex: 70%;
-    background-color: #eab2f4;
-    padding: 20px;
-    
-    
-}
-
-
-.seccion{
-    background-color: $color-secundario;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    width: 100%;
-    margin: 10rem auto 0 auto;
-    border-radius: 30px;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
-
-  .seccion-texto{
-    padding: 5px 5px;
-    text-align: justify;
-    img{
-        border-radius: 5px;
-        float: left;
-        margin-right: 15px;
-        height: 250px;
-        border-radius: 10px;
-        border: 1px solid $color-primario;
-        }
-
-    h3{
-        font-family: fuenteText;
-        color: white;
-        font-size: 2em;
-        text-shadow: 1px 4px 4px rgb(0, 0, 0);
-        text-align: left;
-    }
-    p{
-
-        font-family: fuenteCard;
-        font-size: 1.5em;
-        text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
-        text-shadow: 1px 1px 2px rgb(193, 66, 200);
-        
-    }
-  }
-
-  .cuerpores{
-    border: 2px solid $color-primario;
-    border-radius: 10px;
-    background-color: $color-secundario;
-    width: 100%;
     margin: auto;
-    
-    .review{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        text-align: center;
-        font-family: fuenteText;
-        color: white;
-        background-color: $color-primario;
-        text-shadow: 1px 1px 2px rgb(1, 0, 1);
-        font-size: 1.7em;
-        
-    }
+    border: 6px solid $color-primario;
+    border-radius: 30px;
+  }
 
-    .bien{
-        text-align: center;
-        font-family: fuenteNav;
-        color: white;
-        background-color: $color-primario;
-        text-shadow: 1px 1px 2px rgb(0, 0, 0,);
-        font-size: 1.5em;
-        span{
-            color: greenyellow;
-        }
-    }
+  .entrada:hover {
+    background-image: url(../img/perfil2.jpg);
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border: 6px solid $color-primario;
+    border-radius: 30px;
+  }
+}
+section {
+  flex: 70%;
+  background-color: #eab2f4;
+  padding: 20px;
+}
 
-    .mal{
-        text-align: center;
-        font-family: fuenteNav;
-        color: white;
-        background-color: $color-primario;
-        text-shadow: 1px 1px 2px rgb(0, 0, 0,);
-        font-size: 1.5em;
-        span{
-            color: rgb(255, 50, 47);
-        }
-    }
-    
-    img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+.seccion {
+  background-color: $color-secundario;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  width: 100%;
+  margin: 10rem auto 0 auto;
+  border-radius: 30px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    img:hover {
-        filter: brightness(150%);
-        transform: scale(0.95);
-        transition: all 0.9s;
-      }
-    p{
-        text-align: center;
-        font-family: fuenteCard;
-        text-shadow: 1px 1px 2px rgb(246, 129, 213);
-        font-size: 1.4em;
+.seccion-texto {
+  padding: 5px 5px;
+  text-align: justify;
+  img {
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid $color-primario;
+  }
+
+  h3 {
+    font-family: fuenteText;
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 4px 4px rgb(0, 0, 0);
+    text-align: left;
+  }
+  p {
+    font-family: fuenteCard;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #eeeaea, 0 0 5px #000, 0 0 5px #000;
+    text-shadow: 1px 1px 2px rgb(193, 66, 200);
+  }
+}
+
+.cuerpores {
+  border: 2px solid $color-primario;
+  border-radius: 10px;
+  background-color: $color-secundario;
+  width: 100%;
+  margin: auto;
+
+  .review {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    font-family: fuenteText;
+    color: white;
+    background-color: $color-primario;
+    text-shadow: 1px 1px 2px rgb(1, 0, 1);
+    font-size: 1.7em;
+  }
+
+  .bien {
+    text-align: center;
+    font-family: fuenteNav;
+    color: white;
+    background-color: $color-primario;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 1.5em;
+    span {
+      color: greenyellow;
     }
   }
 
-
-  .form-cont{
-    width: 50%;
-}
-  .form{
-    border: solid 2px $color-primario;
-    background-color: $color-secundario;
-
-}
-
-.title-form{
-    margin-top: 20px;
-    font-family: fuenteTitle;
+  .mal {
     text-align: center;
+    font-family: fuenteNav;
     color: white;
-    text-shadow: 1px 1px 2px rgb(1, 0, 1);
-}
-
-.form-control{
-    font-family: fuenteCard;
-    background-color: #eab2f4;
-}
-
-.form-control:focus{
-    font-family: fuenteCard;
-    background-color: #eab2f4;
-    border-color: $color-primario;
-    
-}
-
-
-.boton-form{
     background-color: $color-primario;
-    width: 20%;
-    border: none;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid 2px #eab2f4;
-    font-family: fuenteTitle;
-}
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 1.5em;
+    span {
+      color: rgb(255, 50, 47);
+    }
+  }
 
-
-.boton-form:hover{
-    background-color: #eab2f4;
-    border: solid 2px #eab2f4;
-}
-
-.boton-form:active{
-    background-color: #e857f5 !important;
-    border: solid 2px #eab2f4 !important;
-}
-
-
-.foter{
-    position: absolute;
+  img {
     width: 100%;
-    bottom: 0;
+    height: auto;
+    object-fit: cover;
+  }
+
+  img:hover {
+    filter: brightness(150%);
+    transform: scale(0.95);
+    transition: all 0.9s;
+  }
+  p {
+    text-align: center;
+    font-family: fuenteCard;
+    text-shadow: 1px 1px 2px rgb(246, 129, 213);
+    font-size: 1.4em;
+  }
+}
+
+.form-cont {
+  width: 50%;
+}
+.form {
+  border: solid 2px $color-primario;
+  background-color: $color-secundario;
+}
+
+.title-form {
+  margin-top: 20px;
+  font-family: fuenteTitle;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(1, 0, 1);
+}
+
+.form-control {
+  font-family: fuenteCard;
+  background-color: #eab2f4;
+}
+
+.form-control:focus {
+  font-family: fuenteCard;
+  background-color: #eab2f4;
+  border-color: $color-primario;
+}
+
+.boton-form {
+  background-color: $color-primario;
+  width: 20%;
+  border: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid 2px #eab2f4;
+  font-family: fuenteTitle;
+}
+
+.boton-form:hover {
+  background-color: #eab2f4;
+  border: solid 2px #eab2f4;
+}
+
+.boton-form:active {
+  background-color: #e857f5 !important;
+  border: solid 2px #eab2f4 !important;
+}
+
+.foter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .animate {
-    animation-duration: 0.7s;
-    animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
 }
 .bounce {
-    animation-name: bounce;
+  animation-name: bounce;
 }
 
 .animate.animate--infinite {
-    animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
-.slideInDown{
-    animation-name: slideInDown;
-    animation-timing-function: ease-in;
-    animation-duration: 8s;
-
+.slideInDown {
+  animation-name: slideInDown;
+  animation-timing-function: ease-in;
+  animation-duration: 8s;
 }
 
 @media screen and (max-width: 1466px) {
-    .slideInDown{
-        animation: none;
-    }
+  .slideInDown {
+    animation: none;
   }
+}
 
 @media screen and (max-width: 934px) {
-
-    .seccion-texto{
-        h3{
-            font-size: 1.5em;
-        }
-        p{
-            font-size: 1.3em;
-        }
-        img{
-            border-radius: 5px;
-            float: left;
-            margin-right: 15px;
-            height: 150px;
-            border-radius: 10px;
-            border: 1px solid $color-primario;
-            }
+  .seccion-texto {
+    h3 {
+      font-size: 1.5em;
     }
-
-    .blockcode{
-        font-size: 0.7em;
+    p {
+      font-size: 1.3em;
+    }
+    img {
+      border-radius: 5px;
+      float: left;
+      margin-right: 15px;
+      height: 150px;
+      border-radius: 10px;
+      border: 1px solid $color-primario;
     }
   }
 
+  .blockcode {
+    font-size: 0.7em;
+  }
+}
 
 @media screen and (max-width: 660px) {
-
-    .boton-form{
-        width: 50%;
-    }
-
-    .form-cont{
-        width: 80%;
-    }
-
-    nav{
-        span{
-            font-size: 1.2em;
-        }
-    
-        ul{
-            li{
-                a{
-                    font-size: 1.2em !important;
-                }
-            }
-        }
-    }
-    
+  .boton-form {
+    width: 50%;
   }
 
-  @media screen and (max-width: 540px) {
-    nav{
-        button{
-            font-size: 0.6em !important;
-        }
-        span{
-            font-size: 0.8em;
-        }
-    
-        ul{
-            li{
-                a{
-                    font-size: 1em !important;
-                }
-            }
-        }
+  .form-cont {
+    width: 80%;
+  }
+
+  nav {
+    span {
+      font-size: 1.2em;
     }
 
+    ul {
+      li {
+        a {
+          font-size: 1.2em !important;
+        }
+      }
+    }
+  }
+}
 
-    h1{
-        font-size: 2em;
+@media screen and (max-width: 540px) {
+  nav {
+    button {
+      font-size: 0.6em !important;
+    }
+    span {
+      font-size: 0.8em;
     }
 
-    .entrada{
-        width: 250px !important;
-        height: 250px !important;
-    }
-    .seccion-texto{
-        img{
-            width: 100%;
-            height: 250px;
+    ul {
+      li {
+        a {
+          font-size: 1em !important;
         }
-        h3{
-            margin-top: 20px;
-            text-align: center;
-            font-size: 1.3em;
-        }
-        p{
-            font-size: 1.1em;
-        }
+      }
     }
   }
 
+  h1 {
+    font-size: 2em;
+  }
 
-  @media screen and (max-width: 540px) {
-    nav{
-        button{
-            font-size: 0.5em !important;
-        }
-        span{
-            font-size: 0.7em;
-        }
-    
-        ul{
-            li{
-                a{
-                    font-size: 1em !important;
-                }
-            }
-        }
+  .entrada {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .seccion-texto {
+    img {
+      width: 100%;
+      height: 250px;
+    }
+    h3 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.3em;
+    }
+    p {
+      font-size: 1.1em;
     }
   }
-  
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    button {
+      font-size: 0.5em !important;
+    }
+    span {
+      font-size: 0.7em;
+    }
+
+    ul {
+      li {
+        a {
+          font-size: 1em !important;
+        }
+      }
+    }
+  }
+}
 
 @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
 
-    40% {
-        transform: translateY(-30px);
-    }
+  40% {
+    transform: translateY(-30px);
+  }
 
-    60% {
-        transform: translateY(-15px);
-    }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes slideInDown {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    to {
-        transform: translateY(3000px);
-    }
+  to {
+    transform: translateY(3000px);
+  }
 }
